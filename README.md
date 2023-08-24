@@ -14,8 +14,20 @@ This application is a utility tool designed to copy labels from one GitLab group
 
 ## Usage
 
+### Running with Nodejs
+
 ```bash
 node <filename>.js --type <type> --from <source_id> --to <destination_id> --url <gitlab_url> --token <access_token> [--dry_run]
+```
+### Running prebuilt executable
+
+Download a binary from the [latest release](https://github.com/ammilam/gitlab-copy-labels/releases/tag/latest).
+
+```bash
+# make it executable
+chmod +x gitlab-copy-labels
+./gitlab-copy-labels --type <type> --from <source_id> --to <destination_id> --url <gitlab_url> --token <access_token> [--dry_run]
+
 ```
 
 ## Parameters
