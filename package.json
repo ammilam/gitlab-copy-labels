@@ -1,0 +1,30 @@
+{
+  "name": "gitlab-copy-labels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pkg": "^5.8.1",
+    "yargs": "^17.7.2"
+  },
+  "pkg": {
+    "scripts": "./src/*.js",
+    "targets": [
+      "node16-macos-x64",
+      "node16-linux-x64",
+      "node16-linux-arm64",
+      "node16-alpine-x64",
+      "node16-alpine-arm64",
+      "node16-win-x64"
+    ],
+    "outputPath": "./"
+  },
+  "bin": {
+    "myapp": "app.js"
+  }
+}
